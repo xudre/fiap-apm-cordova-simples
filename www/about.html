@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://code.jquery.com https://cdnjs.cloudflare.com https://*.fontawesome.com https://fonts.gstatic.com data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://*.fontawesome.com https://fonts.googleapis.com; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no">
+        <meta charset="utf-8">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/7df5923330.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <title>Pet App</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="container">
+                <div class="row p-4">
+                    <h1 class="col text-primary p-0 m-0"><i class="fas fa-cat"></i> Meu App Pet</h1>
+                    <div class="col-1"></div>
+                    <a href="index.html" class="col-3 btn btn-primary">Voltar</a>
+                </div>
+
+                <div class="row p-4 bg-primary text-light">
+                    <h2 class="p-0 m-0">Sobre a ONG</h2>
+                </div>
+            </header>
+
+            <section class="p-4">
+                <p>
+                    Nulla auctor est a erat luctus, vitae pretium est tincidunt. Mauris
+                    fermentum felis nec ante placerat pulvinar. Morbi in odio congue massa
+                    interdum luctus. Quisque a tempus ligula. Proin vitae lobortis nibh, et
+                    interdum metus. Nulla facilisi. Etiam venenatis purus in odio bibendum
+                    varius.
+                </p>
+
+                <p>
+                    Vivamus tincidunt placerat nibh et suscipit. Aenean aliquet mauris id purus
+                    elementum finibus. Fusce interdum felis viverra feugiat dictum. Nulla mollis
+                    dapibus lorem, eu sagittis ex posuere ut. Nunc condimentum hendrerit arcu
+                    vel lobortis. Fusce eget dolor tincidunt, gravida lacus vel, facilisis mi.
+                    Maecenas facilisis neque ut ante maximus pellentesque.
+                </p>
+            </section>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
